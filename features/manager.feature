@@ -50,8 +50,8 @@ Feature: Manager can approve or reject reimbursement requests
         When  The manager clicks the cancel approval button
         Then  The confirmation pop-up should close
 
-Feature: Manger can view a statistics page
 
+Feature: Manger can view a statistics page
 
     Scenario: Manager wants to view the statistics page
         Given The manager is on the manager dashboard page

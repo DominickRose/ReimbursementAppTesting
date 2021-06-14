@@ -10,3 +10,12 @@ class ManagerDashboardPage():
 
 	def status_filter_select(self):
 		return Select(self.driver.find_element_by_id('statusFilter'))
+
+	def approval_comment_input(self):
+		return self.driver.find_element_by_id('approvalCommentInput')
+
+	def cancel_approve_btn(self):
+		return self.driver.find_element_by_id('cancelApproveBtn')
+
+	def submit_approve_btn(self):
+		return self.driver.find_element_by_id('submitApproveBtn')

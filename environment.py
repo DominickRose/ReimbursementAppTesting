@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 
 def before_all(context: Context):
 	context.driver = webdriver.Chrome("C:\\Users\\Dominick\\OneDrive\\Desktop\\chromedriver.exe")
+	context.driver.maximize_window()
 	context.login_page = LoginPage(context.driver)
 	context.employee_dashboard_page = EmployeeDashboardPage(context.driver)
 	context.manager_dashboard_page = ManagerDashboardPage(context.driver)

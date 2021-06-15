@@ -19,3 +19,12 @@ class ManagerDashboardPage():
 
 	def submit_approve_btn(self):
 		return self.driver.find_element_by_id('submitApproveBtn')
+
+	def reject_comment_input(self):
+		return self.driver.find_element_by_id('rejectionCommentInput')
+	
+	def cancel_reject_btn(self):
+		return self.driver.find_element_by_id('cancelRejectBtn')
+
+	def submit_reject_btn(self):
+		return self.driver.find_element_by_id('submitRejectBtn')

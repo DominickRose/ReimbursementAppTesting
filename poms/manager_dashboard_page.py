@@ -28,3 +28,6 @@ class ManagerDashboardPage():
 
 	def submit_reject_btn(self):
 		return self.driver.find_element_by_id('submitRejectBtn')
+
+	def stat_link(self):
+		return self.driver.find_element_by_css_selector('a')

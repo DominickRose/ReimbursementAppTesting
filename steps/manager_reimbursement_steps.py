@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 @when(u'The manager clicks an approve request button')
 def step_impl(context):
     approve_button = WebDriverWait(context.driver, 3).until(EC.presence_of_element_located((By.CLASS_NAME, 'approve-btn')))
-    context.driver.execute_script("arguments[0].scrollIntoView();", approve_button)
+    context.driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
     approve_button.click()
 
 
@@ -48,7 +48,7 @@ def step_impl(context):
 @when(u'The manager clicks the deny request button')
 def step_impl(context):
     approve_button = WebDriverWait(context.driver, 3).until(EC.presence_of_element_located((By.CLASS_NAME, 'reject-btn')))
-    context.driver.execute_script("arguments[0].scrollIntoView();", approve_button)
+    context.driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
     approve_button.click()
 
 @then(u'A confirm rejection pop-up should appear')

@@ -30,4 +30,4 @@ class ManagerDashboardPage():
 		return self.driver.find_element_by_id('submitRejectBtn')
 
 	def stat_link(self):
-		return self.driver.find_element_by_css_selector('a')
+		return self.driver.find_element_by_id('statNav')
